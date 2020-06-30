@@ -17,12 +17,10 @@ public class ProductClass implements Product {
     @GenericGenerator(name = "increment", strategy = "increment")
     private int id;
     private String productName;
-    private float price;
     private int qtd;
 
     public ProductClass(String productName) {
         this.productName = productName;
-        this.price = 0;
         this.qtd = 1;
     }
 
@@ -47,14 +45,6 @@ public class ProductClass implements Product {
         this.productName= prd_productName;
     }
 
-    public float getPrice() {
-        return price;
-    }
-
-    public void setPrice(float price) {
-        this.price = price;
-    }
-
     public int getQtd() {
         return qtd;
     }
@@ -67,7 +57,6 @@ public class ProductClass implements Product {
         JsonObjectBuilder jsonObjectBuilder = Json.createObjectBuilder();
         jsonObjectBuilder.add("id", this.getId());
         jsonObjectBuilder.add("name", this.getProductName());
-        jsonObjectBuilder.add("price", this.getPrice());
         jsonObjectBuilder.add("quantity", this.getQtd());
         return jsonObjectBuilder;
     }

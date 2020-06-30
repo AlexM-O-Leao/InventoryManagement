@@ -33,9 +33,7 @@ public interface InventoryController {
 
     Product changeProductName(String categoryId, String productId, String productName);
 
-    Product changeProductPrice(String categoryId, String productId, float productPrice);
-
-    Product changeProductQtd(String categoryId, String productId, String productQtd);
+    Product changeProductQtd(String categoryId, String productId, int productQtd);
 
     Product createProduct(String categoryId, String productName);
 

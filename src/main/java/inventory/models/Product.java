@@ -7,13 +7,9 @@ public interface Product {
 
     String getProductName();
 
-    float getPrice();
-
     int getQtd();
 
     void setProductName(String productName);
-
-    void setPrice(float productPrice);
 
     void setQtd(int productQtd);
 
