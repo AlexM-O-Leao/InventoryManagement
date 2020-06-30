@@ -29,3 +29,16 @@ POST – altera o nome do produto.
 PUT – altera a quantidade do produto.
 
 DELETE – elimina o produto.
+
+
+To test product and category creation:
+
+{
+  "name": "ProductName or Categorie Name"
+}
+
+To change Quantity:
+
+{
+  "quantity": 20
+}
