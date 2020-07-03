@@ -29,3 +29,5 @@ POST – altera o nome do produto.
 PUT – altera a quantidade do produto.
 
 DELETE – elimina o produto.
+
+PostGreSQL Implementation
