@@ -159,18 +159,10 @@ public class InventoryControllerClass implements InventoryController {
         return product;
     }
 
-    public Product changeProductPrice(String categoryId, String productId, float productPrice) {
+    public Product changeProductQtd(String categoryId, String productId, int productQtd) {
         Category category = this.getCategoryById(categoryId);
         Product product = category.getProduct(productId);
-        product.setPrice(productPrice);
-        this.writeCategory(category);
-        return product;
-    }
-
-    public Product changeProductQtd(String categoryId, String productId, String productQtd) {
-        Category category = this.getCategoryById(categoryId);
-        Product product = category.getProduct(productId);
-        product.setProductName(productQtd);
+        product.setQtd(productQtd);
         this.writeCategory(category);
         return product;
     }

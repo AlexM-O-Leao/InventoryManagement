@@ -16,6 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import inventory.controllers.InventoryController;
 import inventory.controllers.InventoryControllerClass;
 
+@WebServlet("/categories/*")
 public class Rest extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
@@ -67,7 +68,10 @@ public class Rest extends HttpServlet {
 
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String categoryId, productId, categoryName, productName, productQtd;
+        String categoryId;
+        String productId;
+        String categoryName;
+        int productQtd;
         InventoryController controller = new InventoryControllerClass();
 
         resp.setContentType("application/json");
@@ -92,7 +96,7 @@ public class Rest extends HttpServlet {
             case 5: // /categories/<categoriesId>/<productId>
                 categoryId = splits[3];
                 productId = splits[4];
-                productQtd = jsonObject.getString("quantity");
+                productQtd = jsonObject.getInt("quantity");
                 if(!controller.hasCategoryById(categoryId)) {
                     jsonObjectBuilder = setError("There is no category with id "+categoryId+".");
                 }
