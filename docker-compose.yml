@@ -1,0 +1,18 @@
+version: '3'
+services: 
+    app:
+        image: wildfly-inventory
+        ports: 
+            - "8080:8080"
+        volumes: 
+            - .:/app
+    db:
+        image: postgres:9.6.18-alpine
+        environment: 
+            - POSTGRES_USER=postgres
+            - POSTGRESS_PASSWORD=fubar
+            - POSTGRESS_DB=inventory
+        ports:
+            - "5432:5432"
+        volumes:
+            - ./data/pgsql:/var/lib/postgresql/data

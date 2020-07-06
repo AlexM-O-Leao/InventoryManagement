@@ -1,0 +1,8 @@
+inventory\controllers\InventoryController.class
+inventory\models\Product.class
+inventory\controllers\InventoryControllerClass.class
+inventory\models\Category.class
+app.class
+inventory\models\ProductClass.class
+inventory\models\CategoryClass.class
+inventory\views\Rest.class
