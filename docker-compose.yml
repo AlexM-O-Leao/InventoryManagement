@@ -10,8 +10,8 @@ services:
         image: postgres:9.6.18-alpine
         environment: 
             - POSTGRES_USER=postgres
-            - POSTGRESS_PASSWORD=fubar
-            - POSTGRESS_DB=inventory
+            - POSTGRES_PASSWORD=fubar
+            - POSTGRES_DB=inventory
         ports:
             - "5432:5432"
         volumes:
