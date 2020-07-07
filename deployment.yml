@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: wildfly-inventory-pod-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: wildfly-inventory-pod
+  template:
+    metadata:
+      labels:
+        app: wildfly-inventory-pod
+    spec:
+      containers:
+        - name: wildfly-inventory-container
+          image: wildfly-inventory:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8080
+      restartPolicy: Always
