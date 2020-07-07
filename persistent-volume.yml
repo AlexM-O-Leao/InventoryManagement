@@ -11,4 +11,4 @@ spec:
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: "/home/alex/data/wildfly-tasklists-pv"
+    path: "/home/alex/data/wildfly-inventory-pv"
