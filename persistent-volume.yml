@@ -11,4 +11,4 @@ spec:
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: "/mnt/c/Users/alexa/wildfly-tasklists-pv"
+    path: "/home/alex/data/wildfly-tasklists-pv"
