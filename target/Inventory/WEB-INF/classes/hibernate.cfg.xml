@@ -5,7 +5,7 @@
 <hibernate-configuration>
     <session-factory>
         <property name="connection.driver_class">org.postgresql.Driver</property>
-        <property name="connection.url">jdbc:postgresql://10.1.0.63/inventory</property>
+        <property name="connection.url">jdbc:postgresql://10.1.0.137/inventory</property>
         <property name="hibernate.connection.username">postgres</property>
         <property name="hibernate.connection.password">fubar</property>
         <property name="connection.pool_size">1</property>
