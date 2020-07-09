@@ -13,6 +13,8 @@
     <title>Post_Delete_Products</title>
 </head>
 
+<h1>Categorias e Produtos Existentes na DB</h1>
+
 <body>
 
     <%
@@ -52,6 +54,7 @@
     <br>
     <br>
 
+    
     <h2>Adicionar Produtos</h2>
 
     <form action="post_delete_product.jsp" method="POST">

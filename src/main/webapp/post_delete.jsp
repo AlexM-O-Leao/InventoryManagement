@@ -13,7 +13,7 @@
 </head>
 
 
-<h1>Lista de Categorias e Produtos Existentes na DB</h1>
+<h1>Categorias e Produtos Existentes na DB</h1>
 
 <%
     InventoryControllerClass control = new InventoryControllerClass();
@@ -94,19 +94,10 @@
         alert("Categoria Apagada");
 
     }
-    function delete_T() {
 
-        alert("Teacher successfully deleted");
-
-    }
     function add_C() {
 
         alert("Categoria Criada");
-
-    }
-    function add_T() {
-
-        alert("Teacher successfully added");
 
     }
 </script>
