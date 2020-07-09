@@ -38,7 +38,7 @@ public class InventoryControllerClass implements InventoryController {
     }
 
     @SuppressWarnings("unchecked")
-    private List<Category> readCategories() {
+    public List<Category> readCategories() {
         Session session = sessionFactory.openSession();
         List<Category> productLists = null;
         try {
